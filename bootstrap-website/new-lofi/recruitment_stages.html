@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talentus | Recruitment Stage</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-main-grey">
+      <button
+        class="navbar-toggler ml-auto mb-2 bg-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-main-grey mb-5" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- sidebar -->
+            <div
+              class="col-xl-2 col-md-4 col-lg-3 sidebar fixed-top"
+              id="myNavbar"
+            >
+              <div class="navbar-brand">
+                <img
+                  src="img/Talentus logo-01.png"
+                  width="120"
+                  class="text-muted p-2 mb-3"
+                  alt=""
+                />
+                <i class="fas fa-bars text-purple ml-5"></i>
+              </div>
+
+              <ul class="navbar-nav flex-column mt-4">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted p-3 mb-2 sidebar-link">
+                    <!-- <i class="fas fa-home text-muted fa-lg mr-4"></i> -->
+                    <ion-icon
+                      name="home-outline"
+                      class="mr-3 text-purple"
+                      style="font-size: 25px; vertical-align: middle;"
+                    ></ion-icon>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted p-3 mb-2 sidebar-link">
+                    <!-- <i class="fas fa-home text-muted fa-lg mr-4"></i> -->
+                    <ion-icon
+                      name="file-tray-outline"
+                      class="mr-3 text-purple"
+                      style="font-size: 25px; vertical-align: middle;"
+                    ></ion-icon>
+                    Job Management
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted p-3 mb-2 sidebar-link">
+                    <!-- <i class="fas fa-home text-muted fa-lg mr-4"></i> -->
+                    <ion-icon
+                      name="people-circle-outline"
+                      class="mr-3 text-purple"
+                      style="font-size: 25px; vertical-align: middle;"
+                    ></ion-icon>
+                    Talent Pool
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted p-3 mb-2 sidebar-link">
+                    <!-- <i class="fas fa-home text-muted fa-lg mr-4"></i> -->
+                    <ion-icon
+                      name="albums-outline"
+                      class="mr-3 text-purple"
+                      style="font-size: 25px; vertical-align: middle;"
+                    ></ion-icon>
+                    Reports & Analytics
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-muted p-3 mb-2 sidebar-link">
+                    <!-- <i class="fas fa-home text-muted fa-lg mr-4"></i> -->
+                    <ion-icon
+                      name="person-circle-outline"
+                      class="mr-3 text-purple"
+                      style="font-size: 25px; vertical-align: middle;"
+                    ></ion-icon>
+                    My Account
+                  </a>
+                </li>
+              </ul>
+
+              <div class="card card-border-20 bg-light-grey mt-5 mb-3">
+                <img
+                  src="img/paper-file.png"
+                  width="80"
+                  height="74"
+                  class="p-2 mb-1 mx-auto"
+                  alt=""
+                  style="position: relative; margin-top: -40px;"
+                />
+                <div class="card-body" style="font-size: 12px;">
+                  <p>
+                    Upgrade to <span class="font-weight-bold">PRO</span> account
+                    <br />
+                    for more benefits
+                  </p>
+                  <p>
+                    -Up to 50 Active Job <br />
+                    -Reporting Tools <br />
+                    -10 customs source tracker <br />
+                    -5 accounts for company member
+                  </p>
+                  <div class="text-center">
+                    <button class="btn bg-magenta border-radius-8 text-center">
+                      Upgrade Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end of sidebar -->
+
+            <!-- top-nav -->
+            <div
+              class="col-xl-10 col-md-8 col-lg-9 ml-auto py-2 top-navbar mb-0"
+            >
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="">
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <ion-icon
+                        name="arrow-back-outline"
+                        class="p-2"
+                        style="font-size: 25px;"
+                      ></ion-icon>
+                      <div class="p-2">
+                        <h4 class="mb-0">Hiring Pipeline</h4>
+                        <span class="text-muted"
+                          >Job Management > Job Opening > Hiring Pipeline</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <ul class="navbar-nav">
+                    <li class="nav-item mr-3 ml-auto">
+                      <a class="nav-link icon-bullet bg-light-grey icon-parent">
+                        <ion-icon
+                          name="chatbubbles-outline"
+                          style="font-size: 25px;"
+                          class="text-purple"
+                        ></ion-icon>
+                      </a>
+                    </li>
+                    <li class="nav-item mr-3">
+                      <a class="nav-link icon-bullet bg-light-grey icon-parent">
+                        <ion-icon
+                          name="notifications-outline"
+                          style="font-size: 25px;"
+                          class="text-purple"
+                        ></ion-icon>
+                      </a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                      <a
+                        class="nav-link"
+                        data-toggle="modal"
+                        data-target="#sign-out"
+                      >
+                        <ion-icon
+                          name="arrow-back-circle"
+                          style="font-size: 30px;"
+                          class="text-purple"
+                        ></ion-icon>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- endof top-nav -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- modal -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              Stay Here
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Logout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+
+    <!-- New Job Banner -->
+    <section class="mb-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="card bg-light-pink card-border">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-12">
+                    <h2 class="text-pink mt-4 mb-4 font-weight-bold">
+                      IT Support - TC1234567A
+                    </h2>
+                    <p class="h5">
+                      This job has <b>2 position</b> to be filled. Location on
+                      <b>Batam, Indonesia</b>
+                    </p>
+                  </div>
+                  <div class="col-xl-4 col-lg-6 col-md-12">
+                    <img
+                      src="img/process-ilus.png"
+                      width="100%"
+                      style="margin-top: -15%;"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end new job banner -->
+
+    <!-- Recruitment stages -->
+
+    <!-- cards -->
+    <section id="stage_card">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-md-8 col-lg-9 ml-auto">
+            <div class="row pt-md-5 mt-md-3 mb-5">
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div
+                  class="card card-common bg-secondary-magenta border-radius-15"
+                >
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-white mt-1" style="font-size: 14px;">
+                        Total <br />
+                        Candidate
+                      </p>
+                      <div class="text-white">
+                        <h3 style="font-size: 36px;"><b>16</b></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div class="card card-common bg-light-purple border-radius-15">
+                  <div class="card-body" style="padding-bottom: 0;">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-left text-white">
+                        Screening <br />
+                        <span class="h1 font-weight-bold">16</span>
+                      </p>
+                      <!-- <i class="fas fa-money-bill-alt fa-3x text-success"></i> -->
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        class="text-white font-weight-bold rounded"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div class="card card-common bg-purple border-radius-15">
+                  <div class="card-body" style="padding-bottom: 0;">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-left text-white">
+                        Qualified <br />
+                        <span class="h1">16</span>
+                      </p>
+                      <!-- <i class="fas fa-money-bill-alt fa-3x text-success"></i> -->
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        class="text-white rounded"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div class="card card-common bg-magenta border-radius-15">
+                  <div class="card-body" style="padding-bottom: 0;">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-left text-white">
+                        Interview <br />
+                        <span class="h1">16</span>
+                      </p>
+                      <!-- <i class="fas fa-money-bill-alt fa-3x text-success"></i> -->
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        class="text-white rounded"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div class="card card-common bg-pink border-radius-15">
+                  <div class="card-body" style="padding-bottom: 0;">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-left text-white">
+                        Offer <br />
+                        <span class="h1">16</span>
+                      </p>
+                      <!-- <i class="fas fa-money-bill-alt fa-3x text-success"></i> -->
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        class="text-white rounded"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-4 col-sm-6 col-md-4 mb-2">
+                <div class="card card-common bg-main-pink border-radius-15">
+                  <div class="card-body" style="padding-bottom: 0;">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <p class="text-left text-white">
+                        Hired <br />
+                        <span class="h1">16</span>
+                      </p>
+                      <!-- <i class="fas fa-money-bill-alt fa-3x text-success"></i> -->
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        class="text-white rounded"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="candidate_card" class="mb-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-md-8 col-lg-9 ml-auto">
+            <div class="row">
+              <div class="col-5">
+                <div class="mb-3 card">
+                  <div class="card-header card-header-tab-animation">
+                    <ul class="nav nav-justified">
+                      <li class="nav-item">
+                        <a
+                          data-toggle="tab"
+                          href="#tab-eg115-0"
+                          class="active nav-link"
+                          >Qualified</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          data-toggle="tab"
+                          href="#tab-eg115-1"
+                          class="nav-link"
+                          >Disqualified</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-header bg-white">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text-danger">
+                        <span class="h4" style="font-size: 16px;">Shu Ma</span>
+                        <p class="text-muted">Apply date: 05-06-2020</p>
+                      </div>
+
+                      <div class="mr-5">
+                        <ion-icon
+                          name="eye-outline"
+                          style="font-size: 20px;"
+                          class="mx-auto bg-light-pink text-danger rounded p-1"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-header bg-white">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text-danger">
+                        <span class="h4" style="font-size: 16px;">Shu Ma</span>
+                        <p class="text-muted">Apply date: 05-06-2020</p>
+                      </div>
+
+                      <div class="mr-5">
+                        <ion-icon
+                          name="eye-outline"
+                          style="font-size: 20px;"
+                          class="mx-auto bg-light-pink text-danger rounded p-1"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-header bg-white">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text-danger">
+                        <span class="h4" style="font-size: 16px;">Shu Ma</span>
+                        <p class="text-muted">Apply date: 05-06-2020</p>
+                      </div>
+
+                      <div class="mr-5">
+                        <ion-icon
+                          name="eye-outline"
+                          style="font-size: 20px;"
+                          class="mx-auto bg-light-pink text-danger rounded p-1"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-header bg-white">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text-danger">
+                        <span class="h4" style="font-size: 16px;">Shu Ma</span>
+                        <p class="text-muted">Apply date: 05-06-2020</p>
+                      </div>
+
+                      <div class="mr-5">
+                        <ion-icon
+                          name="eye-outline"
+                          style="font-size: 20px;"
+                          class="mx-auto bg-light-pink text-danger rounded p-1"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-header bg-white">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text-danger">
+                        <span class="h4" style="font-size: 16px;">Shu Ma</span>
+                        <p class="text-muted">Apply date: 05-06-2020</p>
+                      </div>
+
+                      <div class="mr-5">
+                        <ion-icon
+                          name="eye-outline"
+                          style="font-size: 20px;"
+                          class="mx-auto bg-light-pink text-danger rounded p-1"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="main-card card" id="application-detail">
+                  <div class="card-body">
+                    <div class="dataTables_wrapper dt-bootstrap4">
+                      <input
+                        type="hidden"
+                        id="url"
+                        value="https://localhost/talentus-platform/"
+                      />
+                      <div class="row">
+                        <div class="col-md-6">
+                          <h3>Candidate Profile</h3>
+                          <h5><b id="candidateName">Steven Famy</b></h5>
+                          <h6 id="candidateNationality">
+                            Nasionality : Indonesia
+                          </h6>
+                          <h6 id="candidateEmailContact">
+                            Contact : steve.mailme@gmail.com / 628128533836
+                          </h6>
+                          <h6 id="candidatePob">Place of Birth : Jakarta</h6>
+                          <h6 id="candidateDob">Date of Birth : 1993-06-03</h6>
+                          <h6 id="candidateAddress">
+                            Address : Komp. Orchid Garden Blok E no 5
+                          </h6>
+                          <h6 id="referenceName">
+                            Source / Reference : TalentHub Page
+                          </h6>
+                          <br />
+                        </div>
+                        <div class="col-md-6">
+                          <div class="d-flex justify-content-between">
+                            <a
+                              class="btn mb-2 btn-pill bg-magenta text-white"
+                              id="nextStagebtn"
+                              value=""
+                            >
+                              Add to Talent Pool
+                            </a>
+                            <ion-icon
+                              name="play-back-outline"
+                              class="text-danger bg-light-pink rounded p-2"
+                              style="font-size: 20px;"
+                            ></ion-icon>
+                            <ion-icon
+                              name="play-forward-outline"
+                              class="text-magenta-bold bg-light-grey rounded p-2"
+                              style="font-size: 20px;"
+                            ></ion-icon>
+                            <ion-icon
+                              name="move-outline"
+                              class="text-bold-purple bg-light-grey rounded p-2"
+                              style="font-size: 20px;"
+                            ></ion-icon>
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="">Summary</h5>
+                      <div id="candidateDesc">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex justify-content-start align-items-center"
+                      >
+                        <div class="p-2">
+                          <ion-icon
+                            name="print-outline"
+                            class="text-danger bg-light-pink rounded p-2"
+                            style="font-size: 20px;"
+                          ></ion-icon>
+                        </div>
+                        <div class="p-2">
+                          <ion-icon
+                            name="mail-outline"
+                            class="text-magenta-bold bg-light-grey rounded p-2"
+                            style="font-size: 20px;"
+                          ></ion-icon>
+                        </div>
+                        <div class="p-2">
+                          <ion-icon
+                            name="shapes-outline"
+                            class="text-bold-purple bg-light-grey rounded p-2"
+                            style="font-size: 20px;"
+                          ></ion-icon>
+                        </div>
+                        <div class="p-2">
+                          <a
+                            class="btn mb-2 btn-pill bg-magenta text-white"
+                            id="nextStagebtn"
+                            value=""
+                          >
+                            Add to Talent Pool
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- activities / quci post -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-8 col-md-9 ml-auto">
+            <div class="row">
+              <div class="col-xl-12">
+                <!-- <h4 class="text-muted mb-4">Recent Customer Activities</h4> -->
+                <div id="accordion" class="accordion border-radius-15">
+                  <div class="card">
+                    <div class="card-header">
+                      <div
+                        href="#collapseOne"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Additional Information
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseOne">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapseTwo"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Additional Interview Kit
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapseTwo">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapse3"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Application Timeline
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapse3">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapse4"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Work Experience
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapse4">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapse5"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Education
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapse5">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapse6"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Cover Letter
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapse6">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                    <div class="card-header">
+                      <div
+                        href="#collapse7"
+                        class="text-primary text-left"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        style="cursor: pointer;"
+                      >
+                        Resume
+                        <ion-icon
+                          name="chevron-down-outline"
+                          class="float-right"
+                          style="cursor: pointer;"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                    <div class="collapse" id="collapse7">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Earum harum commodi dolorem reiciendis praesentium
+                        esse totam voluptas maiores qui impedit?
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of activities / quick post -->
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row border-top pt-3">
+              <div class="col-lg-12 text-center">
+                <p>
+                  &copy; 2020. Talentus
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

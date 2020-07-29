@@ -1,0 +1,7 @@
+body {
+  background-image: url(layout.png);
+  background-repeat: no-repeat;
+  background-size: 50% 20%;
+  background-position: top right;
+  background-attachment: fixed;
+}
